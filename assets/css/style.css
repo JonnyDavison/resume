@@ -3,10 +3,10 @@
 
 /* ---------- Colours */
 
-/* 
-    font-family: 'Exo', sans-serif;
-    font-family: 'Ysabeau', sans-serif;
-*/
+.bg-color-name-title {
+    background-color: #676767;
+}
+
 .ui-menu-color-home {
     background-color: #e67e22;
 }
@@ -47,10 +47,6 @@ h4 {
 }
 
 /* ---------- Heading */
-
-.bg-color-name-title {
-    background-color: #676767;
-}
 
 header {
     margin: 0;
@@ -168,18 +164,26 @@ footer {
     color: #e84610
 }
 
-.social-links li a i {
-    width: 32px;
-    height: 32px;
-    padding: 12px 0;
+.project-links li a i {
+    width: 25px;
+    height: 25px;
+    padding: 5px 0;
     border-radius: 50%;
     font-size: 13px;
-    line-height: 7px;
     text-align: center;
+    display: inline-block;
     color: #fafafa;
     background: #8f8f8f;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
+}
+
+.project-links li a i:hover {
+    background: #e84610;
+}
+
+#footer-details {
+    padding: 20px;
 }
