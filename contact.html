@@ -11,13 +11,20 @@
         type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Jonny Davison Resume</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("K3-p99-quuCecVBcq");
+        })();
+    </script>
 </head>
 
 <body>
     <header>
         <div class="row no-gutters">
             <a href="index.html" class="col-md-4 logo">
-    
+
             </a>
             <div class="col-md-8">
                 <div class="row no-gutters bg-color-name-title">
@@ -67,8 +74,10 @@
                 <div class="center-form">
                     <form action="">
                         <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
-                        <input type="email" name="email" id="email" class="form-control" placeholder="E-mail" required />
-                        <textarea name="projectsummary" id="projectsummary" class="form-control" rows="5" placeholder="Project Description" required></textarea>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="E-mail"
+                            required />
+                        <textarea name="projectsummary" id="projectsummary" class="form-control" rows="5"
+                            placeholder="Project Description" required></textarea>
                         <div class="form-row text-center">
                             <div class="col">
                                 <button type="submit" class="btn btn-secondary">Send Project Request</button>
