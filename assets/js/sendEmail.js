@@ -14,3 +14,19 @@ function sendMail(contactForm){
     )
     return false;
 }
+
+function submitDisappear(){
+    let submitDiv = document.getElementById("submitDiv");
+    submitDiv.style.display = "none";
+}
+
+
+function thanksAppear() {
+    let thanksDiv = document.getElementById("thanksDiv");
+    thanksDiv.style.display = 'block';
+}
+
+
+function resetPage() {
+    window.location.reload();
+}

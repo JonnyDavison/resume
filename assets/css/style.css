@@ -376,3 +376,7 @@ button[type="submit"] {
         max-width: 50%;
     }
 }
+
+.thanksDiv {
+    display: none;
+}

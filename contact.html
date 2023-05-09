@@ -72,18 +72,24 @@
                 <h3 class="contact-heading uppercase text-center">Got a project in mind?</h3>
                 <h5 class="uppercase text-center">Let's work together!</h5>
                 <div class="center-form">
-                    <form onsubmit="return sendMail(this);">
+                    <form onsubmit="return sendMail(this);" id="contact-form">
                         <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
                         <input type="email" name="emailaddress" id="emailaddress" class="form-control" placeholder="E-mail"
                             required />
                         <textarea name="projectsummary" id="projectsummary" class="form-control" rows="5"
                             placeholder="Project Description" required></textarea>
                         <div class="form-row text-center">
-                            <div class="col">
-                                <button type="submit" class="btn btn-secondary">Send Project Request</button>
+                            <div class="col submitDiv" id="submitDiv">
+                                <button type="submit" class="btn btn-secondary" onclick="submitDisappear(); thanksAppear()">Send Project Request</button>
                             </div>
                         </div>
                     </form>
+                    <div class="col thanksDiv" id="thanksDiv">
+                        <h5>Thank You</h5>
+                        <p>Your Submission has been sent</p>
+                        <p>I'll be in contact with you soon!</p>
+                        <button type="submit" class="btn btn-secondary" onclick="resetPage()">Close</button>
+                    </div>
                 </div>
             </div>
         </div>
